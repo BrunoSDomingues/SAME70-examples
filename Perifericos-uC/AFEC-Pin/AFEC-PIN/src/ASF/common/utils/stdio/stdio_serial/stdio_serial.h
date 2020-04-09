@@ -37,8 +37,6 @@
 /*
  * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
  */
-
-
 #ifndef _STDIO_SERIAL_H_
 #define _STDIO_SERIAL_H_
 
@@ -117,3 +115,4 @@ static inline void stdio_serial_init(volatile void *usart, const usart_serial_op
  */
 
 #endif  // _STDIO_SERIAL_H_
+

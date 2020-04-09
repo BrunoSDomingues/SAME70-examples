@@ -33,8 +33,6 @@
 /*
  * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
  */
-
-
 #ifndef _MPU_H_
 #define _MPU_H_
 
