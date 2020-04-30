@@ -139,7 +139,7 @@ void but1_callback(void)
 	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 	printf("but_callback \n");
 	xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
-	printf("semafaro tx \n");
+	printf("semaforo tx \n");
 }
 
 static void task_led(void *pvParameters)
@@ -177,7 +177,7 @@ void but2_callback(void)
 	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 	printf("but2_callback \n");
 	xSemaphoreGiveFromISR(xSemaphore2, &xHigherPriorityTaskWoken);
-	printf("semafaro2 tx \n");
+	printf("semaforo2 tx \n");
 }
 
 static void task_led2(void *pvParameters)
@@ -214,7 +214,7 @@ void but3_callback(void)
 	BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 	printf("but3_callback \n");
 	xSemaphoreGiveFromISR(xSemaphore3, &xHigherPriorityTaskWoken);
-	printf("semafaro3 tx \n");
+	printf("semaforo3 tx \n");
 }
 
 static void task_led3(void *pvParameters)
@@ -319,10 +319,10 @@ void USART1_Handler(void)
 	BaseType_t xHigherPriorityTaskWoken = pdTRUE;
 	char c;
 
-	// Verifica por qual motivo entrou na interrupçcao?
+	// Verifica por qual motivo entrou na interrupï¿½cao?
 	// RXRDY ou TXRDY
 
-	//  Dados disponível para leitura
+	//  Dados disponï¿½vel para leitura
 	if (ret & US_IER_RXRDY)
 	{
 		usart_serial_getchar(USART1, &c);
